@@ -1,0 +1,753 @@
+#menu {
+    right: 30%;
+    top: 20px;
+    position: fixed;
+    border-radius: 60px;
+    height: 50px;
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 999999;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+ul li {
+    transition: 100ms ease-in;
+}
+
+ul li a,
+i {
+    font-weight: bolder;
+    font-family: 'titulo';
+    font-size: 20px;
+    text-decoration: none;
+    color: #252525;
+    padding: 6px 35px;
+}
+
+#menu ul li:hover {
+    transform: translate(0, -5px);
+
+    a {
+        color: #7a7a7a;
+    }
+}
+
+#menu ul i:hover {
+    transform: translate(0, -5px);
+
+    i {
+        color: #7a7a7a;
+    }
+}
+
+
+#apresentacao {
+    text-align: center;
+    display: flex;
+}
+
+.apresentcao {
+    gap: 10%;
+    background-image: url('../imagens/back-home.jpg');
+    background-size: 100%;
+    height: 100vh;
+    align-items: center;
+
+
+    h1 {
+        text-align: left;
+        font-size: 61px;
+        font-weight: 100;
+        font-family: 'fino-mont';
+    }
+
+    p {
+        font-size: 25px;
+        line-height: 45px;
+        padding-right: 50%;
+    }
+}
+
+.apresentcao::before {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4864320728291317) 100%);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-apresentacao {
+    display: flex;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 99;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: 0 36px;
+}
+
+
+.sobre-mim {
+    gap: 10%;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+
+.img-osvaldo {
+    width: 350px;
+    height: 350px;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 0px 40px 0 40px;
+        transition: 800ms ease-in;
+
+    }
+}
+
+.img-osvaldo::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 0px 40px 0 40px;
+    transform: translate(12px, -10px);
+    background: white;
+    z-index: -1;
+    transition: 800ms ease-in;
+}
+
+.sobre-mim:hover ::before {
+    transform: translate(0px, 0px);
+}
+
+.sobre-mim:hover .img-osvaldo img {
+    border: 1px solid white;
+}
+
+.resumo-quem-somos {
+    width: 59%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.principal::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    background-color: #5a00ff;
+    width: 0px;
+    height: 0px;
+    border: solid 1px #5a00ff;
+    z-index: 99;
+    transition: 800ms ease-in;
+}
+
+#sobre-mim:hover .principal::before {
+    width: 63%;
+    height: 1px;
+}
+
+b {
+    color: #9b65ff;
+}
+
+.titulo-uni {
+    margin: 0;
+    color: white;
+    width: 100%;
+    text-align: left;
+
+    h1 {
+        font-family: 'fino-mont';
+        font-weight: 100;
+        font-size: 50px
+    }
+}
+
+#sobre-mim {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    /*     margin: 20% 0 0; */
+    padding-top: 115px;
+}
+
+.sobre-mim-text {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    text-align: center;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.habilidades {
+
+    h2 {
+        font-family: 'skill';
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    justify-items: center;
+
+    img {
+        object-fit: contain;
+        height: 180px;
+        width: 180px;
+    }
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div7 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div9 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
+#projetos {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+
+}
+
+.modi.texto-saber-mais {
+    position: relative;
+    top: 25%;
+    width: 50%;
+
+}
+
+.projetos {
+    background-image: url(../imagens/back-projetos.png);
+    background-size: 70%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.textos-intro {
+    text-align: center;
+}
+
+
+.pers .div1 {
+    transform: translate(319px, 235px);
+}
+
+.pers .div2 {
+    transform: translate(28px, 344px);
+
+}
+
+.pers .div3 {
+    transform: translate(80px, 337px);
+}
+
+
+.pers .div4 {
+    transform: translate(891px, -23px);
+}
+
+.pers .div5 {
+    transform: translate(803px, -163px);
+
+}
+
+.pers .div6 {
+    transform: translate(-60px, -336px);
+}
+
+
+.grid-projetos>.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+    justify-items: center;
+
+    img {
+        object-fit: contain;
+        height: 170px;
+        width: 150px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 0 15px;
+    }
+}
+
+.redes {
+    justify-content: left;
+    gap: px;
+
+    i {
+        width: 2px;
+        font-size: 40px;
+        color: white;
+        margin: 15px 0;
+    }
+}
+
+.redes a:first-child:hover i {
+    color: #0e76a8;
+}
+
+.redes a:nth-child(2):hover i {
+    color: #25d366;
+}
+
+.redes a:nth-child(3):hover i {
+    color: #0026ff;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+.habilidades-mobile {
+    display: none;
+}
+
+.footer-mobile {
+    border: 1px solid #5a00ff;
+    position: relative;
+    justify-content: space-around;
+    padding: 0 15px;
+    background-color: #ffffff;
+
+    i,
+    p {
+        font-weight: bold;
+        color: black;
+    }
+}
+
+
+.blur-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.096);
+}
+
+
+.texto-saber-mais {
+    width: 50%;
+}
+
+.saber-mais {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-osvaldo-sobre {
+    position: relative;
+    border-radius: 75px;
+    object-fit: cover;
+    width: 50%;
+    height: 570px;
+    width: 400px;
+    border: 5px solid #5a00ff;
+
+    img {
+
+        object-fit: cover;
+        border-radius: 75px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.fto-osvaldo {
+    filter: grayscale(2);
+
+}
+
+.img-01 {
+    z-index: 99;
+    position: absolute;
+    top: -10px;
+    right: -40px;
+    transform: rotate(-85deg);
+
+    img {
+        height: 110px;
+        width: 100%;
+    }
+
+}
+
+.img-02 {
+    z-index: 99;
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    transform: rotate(15deg);
+
+    img {
+        height: 110px;
+        width: 100%;
+    }
+
+}
+
+.img-osvaldo-sobre::before {
+    transition: 300ms ease-in;
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 570px;
+    width: 400px;
+    border-radius: 75px;
+    z-index: -1;
+}
+
+.saber-mais:hover .img-osvaldo-sobre::before {
+    transform: translate(20px, 20px);
+}
+
+
+.texto-saber-mais {
+
+
+    h1 {
+        font-family: 'fino-mont';
+        font-weight: 100;
+        font-size: 50px
+    }
+
+    p {
+        font-size: 25px;
+        font-weight: 100;
+        line-height: 35px;
+    }
+}
+
+#contatos {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    #contatos {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+
+    }
+
+    #menu-mobile {
+        display: block;
+        background: white;
+        width: 100%;
+        padding: 15px 0px;
+        border-radius: 25px;
+        margin: 5% 0;
+    }
+
+    #menu-mobile nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-mobile nav a {
+        padding: 0 15px;
+        font-style: normal;
+        color: black;
+        text-decoration: unset;
+        font-family: 'titulo';
+    }
+
+    #home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre-mim {
+        gap: 10%;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+
+    #sobre-mim {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        margin: 0;
+        padding-top: 65px;
+        justify-content: center;
+    }
+
+
+    .resumo-quem-somos {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 21px 0;
+    }
+
+    .sobre-mim-text {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        text-align: left;
+    }
+
+    .titulo-uni {
+
+        position: relative;
+        margin: 0;
+        color: white;
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+
+    .habilidades {
+        display: none;
+    }
+
+    .modificado {
+        img {
+            object-fit: contain;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    #projetos {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .projetos {
+        background-image: none;
+        background-size: 70%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+    }
+
+    .texto-saber-mais-modi {
+        position: relative;
+        top: 25%;
+        width: 100% !;
+    }
+
+    .texto-saber-mais-modi {
+        h1 {
+            font-family: 'fino-mont';
+            font-weight: 100;
+            font-size: 36px;
+        }
+    }
+
+    .texto-saber-mais {
+        width: 100%;
+    }
+
+    .texto-saber-mais {
+        h1 {
+            font-family: 'fino-mont';
+            font-weight: 100;
+            font-size: 40px;
+        }
+    }
+
+
+
+    .habilidades-mobile {
+        display: block;
+
+        h2 {
+            font-family: 'skill';
+            text-align: center;
+        }
+    }
+
+
+    .modificado-teste {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin: 0 auto;
+            object-fit: contain;
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+
+    .grid-habilidades {
+        margin: 0 auto;
+        width: 370px;
+    }
+
+    .textos-intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-mobile {
+        display: none;
+        width: 100%;
+        position: relative;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+
+    .blur-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(4px);
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.096);
+    }
+
+    .apresentcao {
+        gap: 10%;
+        background-image: none!important;
+        background-size: 100%;
+        height: 100%;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+
+    .texto-apresentacao {
+        display: flex;
+        height: 100%;
+        top: 0;
+        position: relative;
+        z-index: 99;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        margin: 20% 0;
+    }
+
+
+    .apresentcao {
+        h1 {
+            text-align: left;
+            font-size: 40px;
+            font-weight: 100;
+            font-family: 'fino-mont';
+        }
+    }
+
+    .apresentcao {
+        p {
+            font-size: 20px;
+            line-height: 27px;
+            padding-right: 0;
+        }
+    }
+    .redes {
+        justify-content: center;
+      
+    }
+
+
+
+
+
+}

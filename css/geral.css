@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'titulo';
+    src:
+        url('../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    /* Para navegadores mais antigos */
+    font-weight: normal;
+    /* Peso normal */
+    font-style: normal;
+    /* Estilo normal */
+}
+
+@font-face {
+    font-family: 'escrita';
+    src:
+        url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    /* Para navegadores mais antigos */
+    font-weight: normal;
+    /* Peso normal */
+    font-style: normal;
+    /* Estilo normal */
+}
+
+@font-face {
+    font-family: 'skill';
+    src:
+        url('../fonts/Silkscreen-Regular.ttf') format('truetype');
+    /* Para navegadores mais antigos */
+    font-weight: normal;
+    /* Peso normal */
+    font-style: normal;
+    /* Estilo normal */
+}
+
+@font-face {
+    font-family: 'fino-mont';
+    src:
+        url('../fonts/Montserrat-ThinItalic.ttf') format('truetype');
+    /* Para navegadores mais antigos */
+    font-weight: normal;
+    /* Peso normal */
+    font-style: normal;
+    /* Estilo normal */
+}
+
+/* Container: Centraliza o conteúdo e define a largura máxima para monitores maiores */
+.container {
+    max-width: 1920px;
+    /* Largura máxima ajustada para monitores de 24" (Full HD) */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    padding: 0 15px;
+    /* Espaçamento interno (padding) */
+}
+
+/* Wrapper: Controle adicional de layout (flexbox ou grid, por exemplo) */
+.wrapper {
+    display: flex;
+    /* Usando flexbox para organizar o conteúdo */
+    flex-wrap: wrap;
+    /* Permite quebra de linha dos itens */
+    justify-content: space-between;
+    /* Distribui os itens igualmente */
+    gap: 20px;
+    /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+
+
+body {
+    background-color: #252525;
+    margin: 0;
+
+    p {
+        font-family: 'escrita';
+        color: white;
+        line-height: 25px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 100;
+        color: white;
+        margin: .5px 0;
+        font-family: 'titulo';
+    }
+}
+
+body #particles-js {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/*Pre edit*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-wpp {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 99;
+/*     animation: pulse 2s infinite; */
+}
+
+.icon-wpp img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.6);
+}
+
+.icon-wpp:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(0, 255, 0, 1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.6);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.8);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.6);
+    }
+}
