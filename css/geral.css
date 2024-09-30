@@ -108,7 +108,7 @@ body #particles-js {
     bottom: 10px;
     right: 5px;
     z-index: 99;
-/*     animation: pulse 2s infinite; */
+    /*     animation: pulse 2s infinite; */
 }
 
 .icon-wpp img {
@@ -139,4 +139,35 @@ body #particles-js {
         transform: scale(1);
         box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.6);
     }
+}
+
+@media (max-width: 1366px) {
+    .pers .div1 {
+        transform: translate(259px, 215px);
+    }
+
+    .pers .div2 {
+        transform: translate(27px, 304px);
+
+    }
+
+    .pers .div3 {
+        transform: translate(80px, 297px);
+    }
+
+
+    .pers .div4 {
+        transform: translate(721px, -43px);
+
+    }
+
+    .pers .div5 {
+        transform: translate(663px, -163px);
+
+    }
+
+    .pers .div6 {
+        transform: translate(-60px, -286px);
+    }
+
 }
