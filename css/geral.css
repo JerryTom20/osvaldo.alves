@@ -171,3 +171,35 @@ body #particles-js {
     }
 
 }
+
+
+@media (max-width: 1280px) {
+    .pers .div1 {
+        transform: translate(259px, 215px);
+    }
+
+    .pers .div2 {
+        transform: translate(27px, 304px);
+
+    }
+
+    .pers .div3 {
+        transform: translate(80px, 297px);
+    }
+
+
+    .pers .div4 {
+        transform: translate(661px, -43px);
+
+    }
+
+    .pers .div5 {
+        transform: translate(583px, -163px);
+
+    }
+
+    .pers .div6 {
+        transform: translate(-60px, -286px);
+    }
+
+}
