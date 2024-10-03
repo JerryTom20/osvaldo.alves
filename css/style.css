@@ -749,13 +749,34 @@ b {
         display: none;
     }
 
+    .img-osvaldo-sobre {
+        position: relative;
+        border-radius: 75px;
+        object-fit: cover;
+        /* width: 100%; */
+        height: 570px;
+        width: 100%;
+        border: 5px solid #5a00ff;
+    }
+
+    .img-osvaldo-sobre::before {
+        transition: 300ms ease-in;
+        content: '';
+        position: absolute;
+        background-color: white;
+        height: 570px;
+        width: 100%;
+        border-radius: 75px;
+        z-index: -1;
+    }
+
 
 
 
 
 }
 
-@media (max-width: 1080px) {
+/* @media (max-width: 1080px) {
     #contatos {
         display: block;
     }
@@ -1001,4 +1022,4 @@ b {
     .icon-wpp{
         display: none;
     }
-}
+} */
