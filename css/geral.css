@@ -65,6 +65,30 @@
     padding: 20px;
 }
 
+/* Para telas menores (celulares) */
+@media (max-width: 767px) {
+    /* Container: ajustado para telas de celulares */
+    .container {
+        max-width: 100%;
+        /* Largura máxima ocupando todo o espaço da tela */
+        padding: 0 10px;
+        /* Reduzindo o espaçamento lateral */
+    }
+
+    /* Wrapper: ajustado para um layout mais compacto */
+    .wrapper {
+        flex-direction: column;
+        /* Itens organizados em uma coluna em vez de linha */
+        align-items: center;
+        /* Centralizando os itens no eixo vertical */
+        gap: 10px;
+        /* Reduzindo o espaçamento entre os itens */
+        padding: 10px;
+        /* Diminuindo o padding para telas menores */
+    }
+}
+
+
 
 
 body {
