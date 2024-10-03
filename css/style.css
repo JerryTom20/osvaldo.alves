@@ -1089,3 +1089,38 @@ b {
 
 
 }
+
+@media (max-width:1366px) {
+    .apresentcao {
+        gap: 10%;
+        background-image: url(../imagens/back-home.jpg);
+        background-size: cover;
+        height: 100vh;
+        align-items: center;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .pers .div1 {
+        transform: translate(239px, 215px);
+    }
+
+    .pers .div2 {
+        transform: translate(7px, 304px);
+    }
+
+    .pers .div3 {
+        transform: translate(60px, 264px);
+    }
+
+    .pers .div4 {
+        transform: translate(641px, -43px);
+    }
+
+    .pers .div5 {
+        transform: translate(553px, -163px);
+    }
+
+
+}
