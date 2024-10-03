@@ -1,3 +1,7 @@
+:root{
+    --primary-color:#955dff;
+}
+
 @font-face {
     font-family: 'titulo';
     src:

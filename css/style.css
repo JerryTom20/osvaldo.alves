@@ -38,19 +38,21 @@ i {
 
 #menu ul li:hover {
     transform: translate(0, -5px);
-
-    a {
-        color: #7a7a7a;
-    }
 }
+
+#menu ul li:hover a {
+    color: var(--primary-color);
+}
+
 
 #menu ul i:hover {
     transform: translate(0, -5px);
-
-    i {
-        color: #7a7a7a;
-    }
 }
+
+#menu ul i:hover i {
+    color: #7a7a7a;
+}
+
 
 
 #apresentacao {
@@ -65,27 +67,28 @@ i {
     height: 100vh;
     align-items: center;
 
-
-    h1 {
-        text-align: left;
-        font-size: 61px;
-        font-weight: 100;
-        font-family: 'fino-mont';
-    }
-
-    p {
-        font-size: 25px;
-        line-height: 45px;
-        padding-right: 50%;
-    }
 }
+
+.apresentcao h1 {
+    text-align: left;
+    font-size: 61px;
+    font-weight: 100;
+    font-family: 'fino-mont';
+}
+
+.apresentcao p {
+    font-size: 25px;
+    line-height: 45px;
+    padding-right: 50%;
+}
+
 
 .apresentcao::before {
     content: '';
     position: relative;
     top: 0;
     left: 0;
-   
+
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.4864320728291317) 100%);
     z-index: 1;
     height: 100%;
@@ -118,16 +121,17 @@ i {
     width: 350px;
     height: 350px;
 
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 0px 40px 0 40px;
-        transition: 800ms ease-in;
-
-    }
 }
+
+.img-osvaldo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0px 40px 0 40px;
+    transition: 800ms ease-in;
+
+}
+
 
 .img-osvaldo::before {
     content: '';
@@ -161,10 +165,10 @@ i {
     content: '';
     position: absolute;
     top: -1px;
-    background-color: #5a00ff;
+    background-color: var(--primary-color);
     width: 0px;
     height: 0px;
-    border: solid 1px #5a00ff;
+    border: solid 1px var(--primary-color);
     z-index: 99;
     transition: 800ms ease-in;
 }
@@ -175,7 +179,7 @@ i {
 }
 
 b {
-    color: #9b65ff;
+    color: var(--primary-color);
 }
 
 .titulo-uni {
@@ -183,13 +187,14 @@ b {
     color: white;
     width: 100%;
     text-align: left;
-
-    h1 {
-        font-family: 'fino-mont';
-        font-weight: 100;
-        font-size: 50px
-    }
 }
+
+.titulo-uni h1 {
+    font-family: 'fino-mont';
+    font-weight: 100;
+    font-size: 50px
+}
+
 
 #sobre-mim {
     width: 100%;
@@ -205,18 +210,20 @@ b {
     display: flex;
     text-align: center;
 
-    h2 {
-        text-align: center;
-    }
 }
 
-.habilidades {
+.sobre-mim-text h2 {
+    text-align: center;
+}
 
-    h2 {
-        font-family: 'skill';
-        text-align: center;
-        font-size: 35px;
-    }
+
+.habilidades h2 {
+
+
+    font-family: 'skill';
+    text-align: center;
+    font-size: 35px;
+
 }
 
 .parent {
@@ -226,13 +233,14 @@ b {
     grid-column-gap: 0;
     grid-row-gap: 0;
     justify-items: center;
-
-    img {
-        object-fit: contain;
-        height: 180px;
-        width: 180px;
-    }
 }
+
+.parent img {
+    object-fit: contain;
+    height: 180px;
+    width: 180px;
+}
+
 
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
@@ -335,29 +343,31 @@ b {
     grid-column-gap: 0;
     grid-row-gap: 50px;
     justify-items: center;
-
-    img {
-        object-fit: contain;
-        height: 170px;
-        width: 150px;
-        background-color: white;
-        border-radius: 50%;
-        padding: 0 15px;
-    }
 }
+
+.grid-projetos>.parent img {
+    object-fit: contain;
+    height: 170px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0 15px;
+}
+
 
 .redes {
     justify-content: flex-start;
     gap: px;
     align-items: center;
-
-    i {
-        width: 2px;
-        font-size: 40px;
-        color: white;
-        margin: 15px 0;
-    }
 }
+
+.redes i {
+    width: 2px;
+    font-size: 40px;
+    color: white;
+    margin: 15px 0;
+}
+
 
 .redes a:first-child:hover i {
     color: #0e76a8;
@@ -384,18 +394,19 @@ b {
 }
 
 .footer-mobile {
-    border: 1px solid #5a00ff;
+    border: 1px solid var(--primary-color);
     position: relative;
     justify-content: space-around;
     padding: 0 15px;
     background-color: #ffffff;
-
-    i,
-    p {
-        font-weight: bold;
-        color: black;
-    }
 }
+
+.footer-mobile i,
+.footer-mobile p {
+    font-weight: bold;
+    color: black;
+}
+
 
 
 .blur-footer {
@@ -424,23 +435,18 @@ b {
     border-radius: 75px;
     object-fit: cover;
     width: 50%;
-    height: 570px;
+    height: 560px;
     width: 400px;
-    border: 5px solid #5a00ff;
-
-    img {
-
-        object-fit: cover;
-        border-radius: 75px;
-        height: 100%;
-        width: 100%;
-    }
 }
 
-.fto-osvaldo {
-    filter: grayscale(2);
+.img-osvaldo-sobre img {
 
+    height: 100%;
+    width: 100%;
 }
+
+
+
 
 .img-01 {
     z-index: 99;
@@ -448,13 +454,14 @@ b {
     top: -10px;
     right: -40px;
     transform: rotate(-85deg);
-
-    img {
-        height: 110px;
-        width: 100%;
-    }
-
 }
+
+.img-01 img {
+    height: 110px;
+    width: 100%;
+}
+
+
 
 .img-02 {
     z-index: 99;
@@ -462,45 +469,47 @@ b {
     bottom: -20px;
     left: -30px;
     transform: rotate(15deg);
-
-    img {
-        height: 110px;
-        width: 100%;
-    }
-
 }
+
+.img-02 img {
+    height: 110px;
+    width: 100%;
+}
+
+
 
 .img-osvaldo-sobre::before {
     transition: 300ms ease-in;
     content: '';
     position: absolute;
     background-color: white;
-    height: 570px;
-    width: 400px;
+    height: 540px;
+    width: 360px;
     border-radius: 75px;
     z-index: -1;
+    transform: translate(5px, 0px);
 }
 
 .saber-mais:hover .img-osvaldo-sobre::before {
-    transform: translate(20px, 20px);
+    transform: translate(40px, 20px);
 }
 
 
-.texto-saber-mais {
 
 
-    h1 {
-        font-family: 'fino-mont';
-        font-weight: 100;
-        font-size: 50px
-    }
 
-    p {
-        font-size: 25px;
-        font-weight: 100;
-        line-height: 35px;
-    }
+.texto-saber-mais h1 {
+    font-family: 'fino-mont';
+    font-weight: 100;
+    font-size: 50px
 }
+
+.texto-saber-mais p {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 35px;
+}
+
 
 #contatos {
     display: none;
@@ -596,14 +605,14 @@ b {
         display: none;
     }
 
-    .modificado {
-        img {
-            object-fit: contain;
-            width: 300px;
-            height: 300px;
-            margin: 0 auto;
-        }
+
+    .modificado img {
+        object-fit: contain;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
     }
+
 
     #projetos {
         display: flex;
@@ -629,36 +638,37 @@ b {
         width: 100% !;
     }
 
-    .texto-saber-mais-modi {
-        h1 {
-            font-family: 'fino-mont';
-            font-weight: 100;
-            font-size: 36px;
-        }
+    .texto-saber-mais-modi h1 {
+
+        font-family: 'fino-mont';
+        font-weight: 100;
+        font-size: 36px;
+
     }
 
     .texto-saber-mais {
         width: 100%;
     }
 
-    .texto-saber-mais {
-        h1 {
-            font-family: 'fino-mont';
-            font-weight: 100;
-            font-size: 40px;
-        }
+    .texto-saber-mais h1 {
+
+        font-family: 'fino-mont';
+        font-weight: 100;
+        font-size: 40px;
+
     }
 
 
 
     .habilidades-mobile {
         display: block;
-
-        h2 {
-            font-family: 'skill';
-            text-align: center;
-        }
     }
+
+    .habilidades-mobile h2 {
+        font-family: 'skill';
+        text-align: center;
+    }
+
 
 
     .modificado-teste {
@@ -666,14 +676,15 @@ b {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-        img {
-            margin: 0 auto;
-            object-fit: contain;
-            width: 300px !important;
-            height: 300px !important;
-        }
     }
+
+    .modificado-teste img {
+        margin: 0 auto;
+        object-fit: contain;
+        width: 300px !important;
+        height: 300px !important;
+    }
+
 
     .grid-habilidades {
         margin: 0 auto;
@@ -710,7 +721,7 @@ b {
 
     .apresentcao {
         gap: 10%;
-        background-image: none!important;
+        background-image: none !important;
         background-size: 100%;
         height: 100%;
         align-items: center;
@@ -730,27 +741,29 @@ b {
     }
 
 
-    .apresentcao {
-        h1 {
-            text-align: left;
-            font-size: 40px;
-            font-weight: 100;
-            font-family: 'fino-mont';
-        }
+    .apresentcao h1 {
+
+        text-align: left;
+        font-size: 40px;
+        font-weight: 100;
+        font-family: 'fino-mont';
+
     }
 
-    .apresentcao {
-        p {
-            font-size: 20px;
-            line-height: 27px;
-            padding-right: 0;
-        }
+    .apresentcao p {
+
+        font-size: 20px;
+        line-height: 27px;
+        padding-right: 0;
+
     }
+
     .redes {
         justify-content: flex-start;
-      
+
     }
-    .icon-wpp{
+
+    .icon-wpp {
         display: none;
     }
 
@@ -761,7 +774,7 @@ b {
         /* width: 100%; */
         height: 570px;
         width: 100%;
-        border: 5px solid #5a00ff;
+        border: 5px solid var(--primary-color);
     }
 
     .img-osvaldo-sobre::before {
@@ -774,6 +787,7 @@ b {
         border-radius: 75px;
         z-index: -1;
     }
+
     .img-01 {
         z-index: 99;
         position: absolute;
@@ -878,14 +892,15 @@ b {
         display: none;
     }
 
-    .modificado {
-        img {
-            object-fit: contain;
-            width: 300px;
-            height: 300px;
-            margin: 0 auto;
-        }
+
+
+    .modificado img {
+        object-fit: contain;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
     }
+
 
     #projetos {
         display: flex;
@@ -911,36 +926,37 @@ b {
         width: 100% !;
     }
 
-    .texto-saber-mais-modi {
-        h1 {
-            font-family: 'fino-mont';
-            font-weight: 100;
-            font-size: 36px;
-        }
+    .texto-saber-mais-modi h1 {
+
+        font-family: 'fino-mont';
+        font-weight: 100;
+        font-size: 36px;
+
     }
 
     .texto-saber-mais {
         width: 100%;
     }
 
-    .texto-saber-mais {
-        h1 {
-            font-family: 'fino-mont';
-            font-weight: 100;
-            font-size: 40px;
-        }
+    .texto-saber-mais h1 {
+
+        font-family: 'fino-mont';
+        font-weight: 100;
+        font-size: 40px;
+
     }
 
 
 
     .habilidades-mobile {
         display: block;
-
-        h2 {
-            font-family: 'skill';
-            text-align: center;
-        }
     }
+
+    .habilidades-mobile h2 {
+        font-family: 'skill';
+        text-align: center;
+    }
+
 
 
     .modificado-teste {
@@ -948,14 +964,15 @@ b {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-        img {
-            margin: 0 auto;
-            object-fit: contain;
-            width: 300px !important;
-            height: 300px !important;
-        }
     }
+
+    .modificado-teste img {
+        margin: 0 auto;
+        object-fit: contain;
+        width: 300px !important;
+        height: 300px !important;
+    }
+
 
     .grid-habilidades {
         margin: 0 auto;
@@ -992,7 +1009,7 @@ b {
 
     .apresentcao {
         gap: 10%;
-        background-image: none!important;
+        background-image: none !important;
         background-size: 100%;
         height: 100%;
         align-items: center;
@@ -1012,27 +1029,29 @@ b {
     }
 
 
-    .apresentcao {
-        h1 {
-            text-align: left;
-            font-size: 40px;
-            font-weight: 100;
-            font-family: 'fino-mont';
-        }
+    .apresentcao h1 {
+
+        text-align: left;
+        font-size: 40px;
+        font-weight: 100;
+        font-family: 'fino-mont';
+
     }
 
-    .apresentcao {
-        p {
-            font-size: 20px;
-            line-height: 27px;
-            padding-right: 0;
-        }
+    .apresentcao p {
+
+        font-size: 20px;
+        line-height: 27px;
+        padding-right: 0;
+
     }
+
     .redes {
         justify-content: center;
-      
+
     }
-    .icon-wpp{
+
+    .icon-wpp {
         display: none;
     }
 
@@ -1043,7 +1062,7 @@ b {
         /* width: 100%; */
         height: 570px;
         width: 100%;
-        border: 5px solid #5a00ff;
+        border: 5px solid var(--primary-color);
     }
 
     .img-osvaldo-sobre::before {
@@ -1056,6 +1075,7 @@ b {
         border-radius: 75px;
         z-index: -1;
     }
+
     .img-01 {
         z-index: 99;
         position: absolute;
@@ -1069,5 +1089,3 @@ b {
 
 
 }
-
-
