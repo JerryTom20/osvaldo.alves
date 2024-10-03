@@ -502,7 +502,7 @@ b {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: >=768px) {
     #contatos {
         display: block;
     }
@@ -753,4 +753,252 @@ b {
 
 
 
+}
+
+@media (max-width: 1080px) {
+    #contatos {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+
+    }
+
+    #menu-mobile {
+        display: block;
+        background: white;
+        width: 100%;
+        padding: 15px 0px;
+        border-radius: 25px;
+        margin: 5% 0;
+    }
+
+    #menu-mobile nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-mobile nav a {
+        padding: 0 15px;
+        font-style: normal;
+        color: black;
+        text-decoration: unset;
+        font-family: 'titulo';
+    }
+
+    #home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre-mim {
+        gap: 10%;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+
+    #sobre-mim {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        margin: 0;
+        padding-top: 65px;
+        justify-content: center;
+    }
+
+
+    .resumo-quem-somos {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 21px 0;
+    }
+
+    .sobre-mim-text {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        text-align: left;
+    }
+
+    .titulo-uni {
+
+        position: relative;
+        margin: 0;
+        color: white;
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+
+    .habilidades {
+        display: none;
+    }
+
+    .modificado {
+        img {
+            object-fit: contain;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    #projetos {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .projetos {
+        background-image: none;
+        background-size: 70%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+    }
+
+    .texto-saber-mais-modi {
+        position: relative;
+        top: 25%;
+        width: 100% !;
+    }
+
+    .texto-saber-mais-modi {
+        h1 {
+            font-family: 'fino-mont';
+            font-weight: 100;
+            font-size: 36px;
+        }
+    }
+
+    .texto-saber-mais {
+        width: 100%;
+    }
+
+    .texto-saber-mais {
+        h1 {
+            font-family: 'fino-mont';
+            font-weight: 100;
+            font-size: 40px;
+        }
+    }
+
+
+
+    .habilidades-mobile {
+        display: block;
+
+        h2 {
+            font-family: 'skill';
+            text-align: center;
+        }
+    }
+
+
+    .modificado-teste {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin: 0 auto;
+            object-fit: contain;
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+
+    .grid-habilidades {
+        margin: 0 auto;
+        width: 370px;
+    }
+
+    .textos-intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-mobile {
+        display: none;
+        width: 100%;
+        position: relative;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+
+    .blur-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(4px);
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.096);
+    }
+
+    .apresentcao {
+        gap: 10%;
+        background-image: none!important;
+        background-size: 100%;
+        height: 100%;
+        align-items: center;
+        background-repeat: no-repeat;
+    }
+
+    .texto-apresentacao {
+        display: flex;
+        height: 100%;
+        top: 0;
+        position: relative;
+        z-index: 99;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        margin: 20% 0;
+    }
+
+
+    .apresentcao {
+        h1 {
+            text-align: left;
+            font-size: 40px;
+            font-weight: 100;
+            font-family: 'fino-mont';
+        }
+    }
+
+    .apresentcao {
+        p {
+            font-size: 20px;
+            line-height: 27px;
+            padding-right: 0;
+        }
+    }
+    .redes {
+        justify-content: center;
+      
+    }
+    .icon-wpp{
+        display: none;
+    }
 }
