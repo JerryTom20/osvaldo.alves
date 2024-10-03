@@ -347,7 +347,7 @@ b {
 }
 
 .redes {
-    justify-content: left;
+    justify-content: flex-start;
     gap: px;
     align-items: center;
 
@@ -747,7 +747,7 @@ b {
         }
     }
     .redes {
-        justify-content: center;
+        justify-content: flex-start;
       
     }
     .icon-wpp{
