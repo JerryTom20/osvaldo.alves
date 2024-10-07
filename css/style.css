@@ -571,7 +571,7 @@ b {
         justify-content: center;
     }
 
-    .img-osvaldo::before {
+    .apresentcao::before {
         display: none;
     }
 
@@ -778,7 +778,7 @@ b {
         /* width: 100%; */
         height: 570px;
         width: 100%;
-        border: 5px solid var(--primary-color);
+    
     }
 
     .img-osvaldo-sobre::before {
@@ -809,7 +809,7 @@ b {
 
 @media (max-width:412px) {
 
-    .img-osvaldo::before {
+    .apresentcao::before {
         display: none;
     }
 
@@ -1071,7 +1071,7 @@ b {
         /* width: 100%; */
         height: 570px;
         width: 100%;
-        border: 5px solid var(--primary-color);
+       
     }
 
     .img-osvaldo-sobre::before {
