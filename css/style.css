@@ -571,6 +571,10 @@ b {
         justify-content: center;
     }
 
+    .img-osvaldo::before {
+        display: none;
+    }
+
 
     .resumo-quem-somos {
         width: 100%;
@@ -804,6 +808,11 @@ b {
 
 
 @media (max-width:412px) {
+
+    .img-osvaldo::before {
+        display: none;
+    }
+
     #contatos {
         display: block;
     }
