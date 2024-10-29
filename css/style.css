@@ -63,7 +63,7 @@ i {
 .apresentcao {
     gap: 10%;
     background-image: url('../imagens/back-home.jpg');
-    background-size: 100%;
+    background-size: cover;
     height: 100vh;
     align-items: center;
 
@@ -237,11 +237,11 @@ b {
 
 .parent img {
     object-fit: contain;
-    height: 180px;
+    height: 200px;
     width: 180px;
+    margin: 0 9px;
+
 }
-
-
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -278,6 +278,11 @@ b {
     grid-area: 3 / 3 / 4 / 4;
 }
 
+.div10 {
+    grid-area: 4 / 2 / 5 / 2; /* Ajuste para ocupar uma nova linha */
+}
+
+
 
 #projetos {
     display: flex;
@@ -309,30 +314,29 @@ b {
 
 
 .pers .div1 {
-    transform: translate(319px, 235px);
+    transform: translate(299px, 222px);
 }
 
 .pers .div2 {
-    transform: translate(28px, 344px);
+    transform: translate(18px, 334px);
 
 }
 
 .pers .div3 {
-    transform: translate(80px, 337px);
+    transform: translate(80px, 327px);
 }
 
 
 .pers .div4 {
-    transform: translate(891px, -23px);
+    transform: translate(831px, -23px);
 }
 
 .pers .div5 {
-    transform: translate(803px, -163px);
-
+    transform: translate(753px, -163px);
 }
 
 .pers .div6 {
-    transform: translate(-60px, -336px);
+    transform: translate(-60px, -316px);
 }
 
 
